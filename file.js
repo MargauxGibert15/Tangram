@@ -9,6 +9,8 @@ var count = target.length;
 var found = 0;
 var attempts = 0;
 
+let selected = false;
+
 const puzzle = {
   cadre1: [
     "rightHearR1",
@@ -29,8 +31,9 @@ initCount(count);
 
 target.forEach(f => {
   f.onclick = e => {
+    if (!selected) return false;
     attempts += 1;
-
+    selected = false;
     // console.log(e.target.id, selectedShape.replace(/\d/gi, ""));
     if (e.target.id === selectedShape.replace(/\d/gi, "")) {
       found += 1;
@@ -57,6 +60,7 @@ shapes.forEach(s => {
   s.onclick = function(e) {
     console.log(`click : ${e.target.id}`);
     selectedShape = e.target.id;
+    selected = true;
     s.classList.add("formSelect");
     // count -= 1;
     // updateCount(count);
