@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tangram</title>
+    <link rel="stylesheet" href="file.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header><h1>TANGRAM</h1></header>
+    <div id="result">
+      <div id="content"></div>
+    </div>
+    <div class="container">
+      <section id="smallerContainer">
+        <div>
+          <span id="texte" style="display:block;"
+            >Click on a geometric shape on the right side of the screen to
+            select it. Click in the area where you want to drop it. If the
+            positioning is correct, the shape will change of color. You have a
+            predefined number of moves for each level. To start from scratch,
+            press "Reset". Blow your heads off!</span
+          ><br />
+        </div>
+        <div id="count" class="numberOfMoves"></div>
+        <div>
+          <button class="btn btn-instructions" value="ON/OFF" onclick="OnOff()">
+            <h3>How to play</h3>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="form">
+      <div class="game-wrap">
+        <div class="svg">
+          <svg
+            width="443.57111"
+            height="343.1976"
+            version="1.1"
+            viewBox="0 0 204.38274 249.96345"
+            id="svg99"
+            sodipodi:docname="test2.svg"
+            inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+          >
+            <defs id="defs103" />
+            <sodipodi:namedview
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1"
+              objecttolerance="10"
+              gridtolerance="10"
+              guidetolerance="10"
+              inkscape:pageopacity="0"
+              inkscape:pageshadow="2"
+              inkscape:window-width="1440"
+              inkscape:window-height="798"
+              id="namedview101"
+              showgrid="false"
+              fit-margin-top="0"
+              fit-margin-left="0"
+              fit-margin-right="0"
+              fit-margin-bottom="0"
+              inkscape:zoom="0.39"
+              inkscape:cx="250.68705"
+              inkscape:cy="263.5773"
+              inkscape:window-x="0"
+              inkscape:window-y="1"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="svg99"
+            />
+            <g id="g97" transform="translate(-190.18665,-318.94644)">
+              <g id="g81">
+                <path
+                  data-found-color="#381C06"
+                  class="hearLeft"
+                  id="leftHear"
+                  transform="matrix(-0.42364,-0.84454,0.77025,-0.36345,-20.432,658.95)"
+                  d="m 239.28,371.92 -46.35,33.033 -46.35,33.033 -5.4328,-56.657 -5.4328,-56.657 51.783,23.623 z"
+                  id="path73"
+                  inkscape:connector-curvature="0"
+                />
+                <path
+                  data-found-color="#381C06"
+                  class="hearRight"
+                  id="rightHearR"
+                  transform="matrix(-0.6783,0.97299,-0.89547,-0.64836,980.29,257.2)"
+                  d="m 397.21,334.45 3.2716,42.92 3.2716,42.92 -38.806,-18.627 -38.806,-18.627 35.534,-24.294 z"
+                  id="path75"
+                  inkscape:connector-curvature="0"
+                />
+                <path
+                  data-found-color="#FF9B00"
+                  class="cheekLeft"
+                  id="leftCheek"
+                  transform="matrix(-0.19826,0.80323,-1.1654,-0.35755,760.24,496.92)"
+                  d="m 249.04,487.24 -48.257,-27.702 -48.257,-27.703 48.119,-27.94 48.119,-27.94 0.13731,55.643 z"
+                  id="path77"
+                  inkscape:connector-curvature="0"
+                />
+                <path
+                  data-found-color="#8BFFDA"
+                  class="eyeLeft"
+                  id="leftEye"
+                  transform="matrix(-1.0081,-1.6744,0.41226,-0.031534,301.35,970.42)"
+                  d="m 291.8,532.59 -13.102,27.92 -13.102,27.92 -17.628,-25.306 -17.628,-25.306 30.73,-2.613 z"
+                  id="path79"
+                  inkscape:connector-curvature="0"
+                />
+              </g>
+              <path
+                data-found-color="#8BFFDA"
+                class="eyeRight"
+                id="rightEye"
+                d="m 356.33,470.88 c -1.5752,2.4562 -14.741,23.518 -29.258,46.805 -30.235,48.501 -33.864,54.247 -34.081,53.963 -0.0866,-0.11322 2.8624,-11.776 6.5532,-25.916 3.6909,-14.141 7.1057,-27.266 7.5884,-29.166 0.85751,-3.3762 1.4408,-3.9768 25.292,-26.045 13.428,-12.424 24.86,-23.04 25.405,-23.592 1.889,-1.9104 1.3514,-0.49347 -1.4992,3.9514 z"
+                id="path83"
+                inkscape:connector-curvature="0"
+                style="stroke-width:0.78658998"
+              />
+              <path
+                data-found-color="#FF9B00"
+                class="cheekRight"
+                id="rightCheek"
+                d="m 375.95,544.96 c -36.722,9.6358 -66.869,17.277 -66.995,16.98 -0.12583,-0.29693 10.587,-20.737 23.806,-45.423 13.219,-24.686 25.092,-46.868 26.385,-49.294 l 2.35,-4.4103 40.136,29.713 c 22.075,16.342 41.13,30.488 42.346,31.434 1.8973,1.4776 1.9646,1.8459 0.47487,2.6008 -0.95446,0.48372 -31.78,8.7633 -68.502,18.399 z"
+                id="path85"
+                inkscape:connector-curvature="0"
+                style="stroke-width:1.12740004"
+              />
+              <path
+                data-found-color="#C84717"
+                class="headfore"
+                id="forehead"
+                transform="matrix(0.34133,0,0,1.014,191.65,58.691)"
+                d="m 293.95,504.55 -54.432,-95.832 -54.432,-95.832 110.21,0.77613 110.21,0.77612 -55.777,95.056 z"
+                id="path87"
+                inkscape:connector-curvature="0"
+              />
+              <path
+                data-found-color="#EE794C"
+                class="eyebrowLeft"
+                id="leftEyebrow"
+                transform="matrix(-0.75348,-0.0037303,0.20434,-0.84214,423.66,807.11)"
+                d="m 256.96,502.67 -55.394,-30.751 -55.394,-30.751 54.328,-32.597 54.328,-32.597 1.0657,63.348 z"
+                id="path89"
+                inkscape:connector-curvature="0"
+              />
+              <path
+                data-found-color="#EE794C"
+                class="eyebrowRight"
+                id="rightEyebrow"
+                d="m 274.05,487.48 c -0.65309,-0.49722 -21.876,-12.668 -47.162,-27.046 -25.286,-14.378 -45.862,-26.494 -45.725,-26.923 0.27757,-0.86874 64.289,-48.962 67.536,-50.741 1.9013,-1.0418 2.8496,2.3744 13.111,47.231 6.0836,26.594 11.594,50.61 12.245,53.369 0.74397,3.1517 0.74263,4.6792 -0.004,4.1111 z"
+                id="path91"
+                inkscape:connector-curvature="0"
+              />
+              <path
+                data-found-color="#AA6E06"
+                class="faceLeft"
+                id="leftFace"
+                transform="matrix(-0.92653,1.21,-0.83783,-0.25408,740.31,366.59)"
+                d="m 226.74,465.03 -31.022,16.118 -31.022,16.118 1.5522,-34.925 1.5522,-34.925 29.47,18.807 z"
+                id="path93"
+                inkscape:connector-curvature="0"
+              />
+              <path
+                data-found-color="#AA6E06"
+                class="faceRight"
+                id="rightFace"
+                d="m 444.5,517.4 c -1.4775,-3.3592 -9.3264,-21.475 -17.442,-40.257 -8.1157,-18.782 -14.827,-34.244 -14.913,-34.359 -0.12212,-0.16265 -21.862,7.4853 -49.637,17.462 -1.2482,0.44834 7.8805,7.5216 38.224,29.617 21.925,15.965 41.346,30.067 43.159,31.336 l 3.2956,2.3081 z"
+                id="path95"
+                inkscape:connector-curvature="0"
+                style="stroke-width:0.95363998"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="cadre1">
+          <svg
+            class="svg2"
+            width="86.006927"
+            height="100.64882"
+            version="1.1"
+            viewBox="0 0 22.756001 26.6304"
+            id="svg159"
+            sodipodi:docname="righthear.svg"
+            inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+          >
+            <defs id="defs163" />
+            <sodipodi:namedview
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1"
+              objecttolerance="10"
+              gridtolerance="10"
+              guidetolerance="10"
+              inkscape:pageopacity="0"
+              inkscape:pageshadow="2"
+              inkscape:window-width="640"
+              inkscape:window-height="480"
+              id="namedview161"
+              showgrid="false"
+              inkscape:zoom="2.3447867"
+              inkscape:cx="43.003466"
+              inkscape:cy="50.324408"
+              inkscape:window-x="0"
+              inkscape:window-y="0"
+              inkscape:window-maximized="0"
+              inkscape:current-layer="svg159"
+              units="px"
+            />
+
+            <path
+              id="rightHearR1"
+              d="M 21.512,26.6304 10.756,20.1099 0,13.5894 11.378,6.7947 22.756,0 22.13471,13.315 Z"
+              id="path157"
+              inkscape:connector-curvature="0"
+              style="stroke-width:0.30294999"
+            />
+          </svg>
+
+          <svg
+            width="23.835mm"
+            height="27.413mm"
+            version="1.1"
+            viewBox="0 0 23.835308 27.413139"
+          >
+            <path
+              id="leftHear11"
+              d="m1.1734 15.039c-0.47742-6.8789-0.93675-13.077-1.0207-13.773l-0.15269-1.2661 11.96 7.1786c6.5781 3.9483 11.922 7.212 11.875 7.2528-0.24769 0.21686-21.135 12.862-21.436 12.978-0.29017 0.11135-0.52158-2.2239-1.2257-12.37z"
+              stroke-width=".26458"
+            />
+          </svg>
+
+          <svg
+            width="22.433mm"
+            height="21.359mm"
+            version="1.1"
+            viewBox="0 0 22.433159 21.358763"
+          >
+            <path
+              id="rightFace1"
+              d="m21.723 19.742c-0.39092-0.88879-2.4676-5.6819-4.6149-10.651-2.1473-4.9694-3.923-9.0604-3.9457-9.0908-0.0323-0.043-5.7843 1.9805-13.133 4.6202-0.33026 0.11862 2.085 1.9901 10.113 7.8362 5.801 4.2241 10.939 7.9552 11.419 8.291l0.87196 0.61069z"
+              stroke-width=".25232"
+            />
+          </svg>
+
+          <?xml version="1.0" encoding="UTF-8"?>
+
+          <svg
+            width="25.186mm"
+            height="28.232mm"
+            version="1.1"
+            viewBox="0 0 25.186001 28.232"
+          >
+            <path
+              id="leftEyebrow1"
+              d="M 6.4246,0 15.8053,6.9065 25.186,13.813 12.593,21.0225 0,28.232 3.2125,14.116 Z"
+              stroke-width=".21089"
+            />
+          </svg>
+
+          <svg
+            width="17.449mm"
+            height="27.929mm"
+            version="1.1"
+            viewBox="0 0 17.449293 27.9289"
+          >
+            <path
+              id="rightEye1"
+              d="m16.759 1.2644c-0.41677 0.64987-3.9002 6.2225-7.7412 12.384-7.9997 12.833-8.9598 14.353-9.0173 14.278-0.0229-0.0299 0.75734-3.1157 1.7339-6.8569 0.97656-3.7415 1.88-7.2141 2.0078-7.7168 0.22688-0.89328 0.38121-1.0522 6.6918-6.8911 3.5528-3.2872 6.5775-6.096 6.7217-6.242 0.4998-0.50546 0.35756-0.13056-0.39666 1.0455z"
+              stroke-width=".20812"
+            />
+          </svg>
+
+          <svg
+            width="36.126mm"
+            height="26.229mm"
+            version="1.1"
+            viewBox="0 0 36.125797 26.229116"
+          >
+            <path
+              id="rightCheek1"
+              d="m17.726 21.734c-9.716 2.5495-17.692 4.5712-17.726 4.4926-0.0333-0.0786 2.8011-5.4867 6.2987-12.018 3.4975-6.5315 6.6389-12.4 6.981-13.042l0.62177-1.1669 10.619 7.8616c5.8407 4.3238 10.882 8.0666 11.204 8.3169 0.502 0.39094 0.5198 0.48839 0.12564 0.68812-0.25253 0.12799-8.4084 2.3186-18.124 4.8681z"
+              stroke-width=".29829"
+            />
+          </svg>
+
+          <svg
+            width="19.906mm"
+            height="51.422mm"
+            version="1.1"
+            viewBox="0 0 19.9062 51.422001"
+          >
+            <path
+              id="forehead1"
+              d="M 9.8316,51.422 4.9158,25.711 0,0 l 9.9531,0.20823 9.9531,0.20822 -5.0372,25.502 z"
+              stroke-width=".15566"
+            />
+          </svg>
+
+          <svg
+            width="22.787mm"
+            height="22.03mm"
+            version="1.1"
+            viewBox="0 0 22.786798 22.029999"
+          >
+            <path
+              id="leftFace1"
+              d="M 0,22.03 4.0319,11.015 8.0638,0 15.4253,2.8448 22.7868,5.6896 11.3938,13.86 Z"
+              stroke-width=".29572"
+            />
+          </svg>
+
+          <svg
+            width="24.725mm"
+            height="27.775mm"
+            version="1.1"
+            viewBox="0 0 24.72535 27.775297"
+          >
+            <path
+              id="rightEyebrow1"
+              d="m24.576 27.743c-0.17279-0.13156-5.788-3.3517-12.478-7.1559-6.6902-3.8042-12.134-7.0099-12.098-7.1234 0.0734-0.22985 17.01-12.955 17.869-13.425 0.50305-0.27564 0.75396 0.62823 3.469 12.497 1.6096 7.0363 3.0676 13.391 3.2398 14.121 0.19684 0.83389 0.19648 1.238-1e-3 1.0877z"
+              stroke-width=".26458"
+            />
+          </svg>
+
+          <svg
+            width="16.963mm"
+            height="27.184mm"
+            version="1.1"
+            viewBox="0 0 16.9634 27.184401"
+          >
+            <path
+              id="leftEye1"
+              d="m0 0 6.5401 5.5715 6.5401 5.5715 1.9416 8.0207 1.9416 8.0207-8.4815-13.592z"
+              stroke-width=".22483"
+            />
+          </svg>
+
+          <svg
+            width="34.328mm"
+            height="25.738mm"
+            version="1.1"
+            viewBox="0 0 34.327999 25.738001"
+          >
+            <path
+              id="leftCheek1"
+              d="m0 15.27 11.073-7.635 11.073-7.6349 6.091 12.869 6.091 12.869-17.164-5.2347z"
+              stroke-width=".2655"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div>
+        <button
+          class="btn btn-reset"
+          type="reset"
+          value="reset"
+          onClick="resetForm()"
+        >
+          <h3>Reset</h3>
+        </button>
+      </div>
+    </section>
+    <div id="my_id"></div>
+    <script src="./file.js"></script>
+  </body>
+</html>
