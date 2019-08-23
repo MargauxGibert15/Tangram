@@ -75,11 +75,11 @@ shapes.forEach(s => {
 function playSound(mode) {
   var status = {
     win: {
-      audio: new Audio("Wingame.wav"),
+      audio: new Audio("./Wingame.wav"),
       msg: "You Rock !"
     },
     loose: {
-      audio: new Audio("Lostgame.wav"),
+      audio: new Audio("./Lostgame.wav"),
       msg: "You Suck !"
     }
   };
@@ -122,10 +122,10 @@ function initCount(count) {
 
 //When I click it play a random sound included in the repository !!
 var sounds = [
-  new Audio("/click1.wav"),
-  new Audio("/click2.wav"),
-  new Audio("/click3.wav"),
-  new Audio("/click4.wav")
+  new Audio("./click1.wav"),
+  new Audio("./click2.wav"),
+  new Audio("./click3.wav"),
+  new Audio("./click4.wav")
 ];
 
 let body = document.querySelector("body");
